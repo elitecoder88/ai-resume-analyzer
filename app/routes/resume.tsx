@@ -2,25 +2,25 @@ import {Link, useNavigate, useParams} from "react-router";
 import {useEffect, useState} from "react";
 import {usePuterStore} from "~/lib/puter";
 import Summary from "~/components/Summary";
-import Details from "~/components/Details";
 import ATS from "~/components/ATS";
+import Details from "~/components/Details";
 
 export const meta = () => ([
-  { title: 'Resumind | Review' },
+  { title: 'Resumind | Review ' },
   { name: 'description', content: 'Detailed overview of your resume' },
 ])
 
 const Resume = () => {
   const { auth, isLoading, fs, kv } = usePuterStore();
   const { id } = useParams();
-  const [imageUrl, setImageUrl] = useState("");
-  const [resumeUrl, setResumeUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState('');
+  const [resumeUrl, setResumeUrl] = useState('');
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     if(!isLoading && !auth.isAuthenticated) navigate(`/auth?next=/resume/${id}`);
-  }, [isLoading]);
+  }, [isLoading])
 
   useEffect(() => {
     const loadResume = async () => {
@@ -37,13 +37,13 @@ const Resume = () => {
       const resumeUrl = URL.createObjectURL(pdfBlob);
       setResumeUrl(resumeUrl);
 
-      const imageBlob = await fs.read(data.resumePath);
+      const imageBlob = await fs.read(data.imagePath);
       if(!imageBlob) return;
       const imageUrl = URL.createObjectURL(imageBlob);
       setImageUrl(imageUrl);
 
       setFeedback(data.feedback);
-      console.log({ resumeUrl, imageUrl, feedback: data.feedback });
+      console.log({resumeUrl, imageUrl, feedback: data.feedback });
     }
 
     loadResume();
