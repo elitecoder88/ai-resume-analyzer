@@ -72,7 +72,7 @@ Ensure the following are installed on your machine:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/adrianhajdin/ai-resume-analyzer.git
+git clone https://github.com/elitecoder88/ai-resume-analyzer.git
 cd ai-resume-analyzer
 ```
 
