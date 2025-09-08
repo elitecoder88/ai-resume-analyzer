@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e672fa43-8b15-4f29-984f-020d01ce8ab4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/routes/wipe.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ResumeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ResumeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.react-router/types/+routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.react-router/types/+routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/prettier" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/prettier" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
@@ -1643,7 +1644,7 @@
       <workItem from="1757113201511" duration="9937000" />
       <workItem from="1757190081702" duration="8241000" />
       <workItem from="1757286686483" duration="12776000" />
-      <workItem from="1757330619884" duration="3685000" />
+      <workItem from="1757330619884" duration="4627000" />
     </task>
     <servers />
   </component>
